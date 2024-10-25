@@ -17,3 +17,16 @@ projectContainers.forEach(container => {
         }, 1000); 
     });
 });
+
+const mobileQuery = window.matchMedia("(max-width: 600px)");
+const tabletQuery = window.matchMedia("(min-width: 601px) and (max-width: 1024px)");
+
+function manejarCambio(e) {
+  if (e.matches) {
+    console.log("Aplicando cambios específicos para esta consulta de media.");
+    // Realiza cambios específicos según el tamaño de pantalla.
+  }
+}
+
+mobileQuery.addListener(manejarCambio);
+tabletQuery.addListener(manejarCambio);
