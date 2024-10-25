@@ -108,7 +108,7 @@ h1, h2 {
 .proyecto-contenedor:hover .proyecto-texto {
     opacity: 1;
     max-height: 200px; 
-    transform: translate(100%, 100%) scale(1); 
+    transform: translate(-100%, -100%) scale(1); 
 }
 
 /* Mover el icono a la derecha al hacer hover */
