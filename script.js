@@ -34,6 +34,12 @@ tabletQuery.addListener(manejarCambio);
 const botonMenu = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
 
-botonMenu.addEventListener("click", () => {
-    menu.classList.toggle("mostrar");
+botonMenu.addEventListener("mouseenter", () => {
+    menu.classList.add("mostrar");
+    botonMenu.style.display = "none"; 
+});
+
+menu.addEventListener("mouseleave", () => {
+    menu.classList.remove("mostrar");
+    botonMenu.style.display = "block";
 });
