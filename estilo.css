@@ -99,9 +99,9 @@ h1, h2 {
     transition: opacity 1s ease, transform 1s ease;
     transform: scale(0); 
     position: absolute;
-    left: 50%; 
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0); 
+    left: 100%; 
+    top: 100%;
+    transform: translate(-100%, -100%) scale(0); 
 }
 
 /* Mostrar el cuadro de texto al hacer hover */
@@ -113,7 +113,7 @@ h1, h2 {
 
 /* Mover el icono a la derecha al hacer hover */
 .proyecto-contenedor:hover .proyectos {
-    transform: translateX(-330px) scale(1.1);
+    transform: translateX(-130px) scale(1.1);
 }
 
 /* Separador */
