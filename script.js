@@ -24,9 +24,16 @@ const tabletQuery = window.matchMedia("(min-width: 601px) and (max-width: 1024px
 function manejarCambio(e) {
   if (e.matches) {
     console.log("Aplicando cambios específicos para esta consulta de media.");
-    // Realiza cambios específicos según el tamaño de pantalla.
+    
   }
 }
 
 mobileQuery.addListener(manejarCambio);
 tabletQuery.addListener(manejarCambio);
+
+const botonMenu = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+botonMenu.addEventListener("click", () => {
+    menu.classList.toggle("mostrar");
+});

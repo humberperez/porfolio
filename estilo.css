@@ -189,6 +189,15 @@ hr.separador {
 .contenido {
     padding-top: 10px; 
 }
+/* Boton menu */
+#menu {
+    display: none; 
+}
+
+#menu.mostrar {
+    display: block; 
+}
+
 
 /* Estilos para móviles */
 @media (max-width: 600px) {
