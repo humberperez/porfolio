@@ -93,28 +93,28 @@ h1, h2 {
     border-radius: 5px;
     padding: 10px;
     width: 450px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
+    opacity: 0; 
+    max-height: 0; 
+    overflow: hidden; 
     transition: opacity 1s ease, transform 1s ease;
-    transform: scale(0);
-    position: relative; 
-    margin-top: -220px; 
-    margin-left: 220px; 
+    transform: scale(0); 
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0); 
 }
 
 /* Mostrar el cuadro de texto al hacer hover */
 .proyecto-contenedor:hover .proyecto-texto {
     opacity: 1;
-    max-height: 200px;
-    transform: scale(1);
+    max-height: 200px; 
+    transform: translate(-100%, -100%) scale(1); 
 }
 
-/* Mover el icono a la izquierda al hacer hover */
+/* Mover el icono a la derecha al hacer hover */
 .proyecto-contenedor:hover .proyectos {
-    transform: translateX(-230px) scale(1.1); 
+    transform: translateX(-330px) scale(1.1);
 }
-
 
 /* Separador */
 hr.separador {
