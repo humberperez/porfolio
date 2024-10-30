@@ -47,15 +47,14 @@ h1, h2 {
     height: 200px; 
     object-fit: cover;
 }
-
-#cv {
+.cv {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-  }
+}
   
-  #cv button {
+.cv button {
     background-color: black; 
     color: white;
     padding: 12px 24px; 
@@ -65,17 +64,17 @@ h1, h2 {
     font-weight: 500; 
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.2s ease; 
-  }
+}
   
-  #cv button:hover {
+.cv button:hover {
     background-color: #333; 
     transform: scale(1.05); 
-  }
+}
   
-  #cv button:active {
+.cv button:active {
     background-color: #444; 
     transform: scale(1); 
-  }  
+}  
 
 
 .texto {
